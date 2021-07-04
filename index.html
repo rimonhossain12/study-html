@@ -82,9 +82,17 @@
     <hr>
     <div>
         <form>
-            <p>UserName: <input type="text" placeholder="Only letter and numbers" required pattern="[a-zA-Z0-9]+"></p>
+            <datalist id="names">
+                <option value="Rimon Hossain">Rimon Hossain</option>
+                <option value="Rabeya Begum">Rabeya Begum</option>
+                <option value="Sufia Begum">Sufia Begum</option>
+                <option value="Rabeya Begum">Rabeya Begum</option>
+            </datalist>
+
+            <p>UserName: <input type="text" list="names" placeholder="Only letter and numbers" required
+                    pattern="[a-zA-Z0-9]+"></p>
             <p>Password: <input type="password" placeholder="ener your password" required pattern="[a-zA-Z0-9]+"></p>
-            <p>Email: <input type="email" placeholder="enter your emai"></p>
+            <p>Email: <input type="email" placeholder="enter your email"></p>
         </form>
     </div>
     <div>
@@ -97,7 +105,27 @@
         <input type="radio" name="gender" value="gender" id="gender">male
         <input type="radio" name="gender" value="gender" id="gender">Female
     </div>
+    <div>
+        <label>Department: </label>
+        <select>
+            <option value="CSE">CSE</option>
+            <option selected value="EEE">EEE</option>
+            <option value="LLB">LLB</option>
+            <option value="ENGLISH">ENGLISH</option>
+            <option value="MBA">MBA</option>
+        </select>
+    </div>
+    <div>
+        <p>
+            Feeddback:<br>
+            <textarea>
 
+            </textarea>
+        </p>
+        <input type="button" value="sign-up">
+        <input type="reset" value="clear">
+    </div>
+    <hr>
 </body>
 
 </html>
